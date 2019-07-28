@@ -1,0 +1,111 @@
+.thong-tin-san-pham
+	article
+		img
+			max-width: 100%
+			height: auto
+	.swiper-product-thumbs
+		.swiper-wrapper
+			height: 120px
+		.swiper-slide
+			width: 85px
+			height: 85px
+
+			&:hover
+				border-color: #333333
+			
+		.swiper-slide-thumb-active
+			border: 2px solid #333333
+			opacity: 1
+		
+	.swiper-product-top
+		margin-bottom: 10px
+	.swiper-slide
+		transition: .3s all ease-in-out
+		border: 2px solid #e1e1e1
+		.banner
+			img
+				max-width: 100%
+				height: auto
+				width: 100%
+	
+	.banner
+		padding: 1rem 0
+		display: flex
+		justify-content: center
+		align-items: center
+	article
+		h2
+			font-size: 24px
+			color: #333333
+			line-height: 30px
+			font-weight: 400
+		.title
+			margin: 20px 0
+			padding: 8px 20px
+			display: block
+			background: #e8f7f4
+			color: #009579
+			font-size: 15px
+			font-weight: 700
+
+		p
+			font-size: 15px
+			color: #666666
+			line-height: 23px
+			font-weight: 400
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			li
+				padding: 0 0 2px 10px 
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				line-height: 23px
+				font-size: 16px
+				color: #666666
+				p
+					color: #666666
+			
+				&:before
+					content: '\2022'
+					color: #999999
+					font-size: xx-large
+					display: inline-block
+					width: 16px
+					margin-left: -16px
+		.file-attach
+			padding-top: 10px
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			em
+				color: #e70000
+				padding-right: .5rem
+				font-size: 18px
+			a
+				color: #007bff
+				text-decoration: underline
+			@media screen and(max-width:992px)
+				padding-top: 30px
+		.contact-button
+			padding-top: 25px
+			a
+				background: #898989
+				color: #ffffff
+				padding: 5px 34px
+				border-radius: 5px
+				em
+					padding-right: .5rem
+		.certificate-image
+			img
+				max-width: 100%
+				height: auto
+		.chart-image
+			img
+				max-width: 100%
+				height: auto
+	@media screen and(max-width:1025px)
+		article
+			padding-top: 20px

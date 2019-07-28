@@ -1,0 +1,28 @@
+.sidebar-document
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	background: #f5f5f5
+	padding: 20px 20px
+	ol
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-direction: column
+		list-style-type: none
+		padding: 0
+		margin: 0
+		li
+			padding: 8px 0
+			display: inline
+			&.active
+				a
+					font-weight: 600
+					color: #009579
+			a
+				
+				font-size: 15px
+				color: #333333
+				text-decoration: none
+	@media screen and(max-width:1025px)
+		margin-bottom: 20px

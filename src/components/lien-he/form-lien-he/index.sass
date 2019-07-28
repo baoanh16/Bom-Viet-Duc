@@ -1,0 +1,73 @@
+.contact-form
+	.frm-btn-reset
+		display: none
+	.contact-title
+		p
+			color: #333333
+			font-size: 16px
+			font-weight: 600
+			padding-bottom: 25px
+			span
+				color: #2c378f
+	.form-group
+		padding: 8px 10px
+		span
+			display: none
+		input,textarea
+			border: 1px solid #cdcdcd
+			width: 100%
+			padding: 8px 30px
+			color: #666666
+			font-size: 14px
+			line-height: 20px
+			background: #f2f2f2
+			&:focus
+				outline: none
+			&::placeholder
+				color: #666666
+				font-size: 14px
+				line-height: 20px
+	.frm-btn
+		
+		vertical-align: middle
+		transform: perspective(1px) translateZ(0)
+		transition-duration: .3s
+		transition-property: transform
+		margin-bottom: 15px
+		cursor: pointer
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		padding: 4px 40px
+		border-radius: 15px
+		background: #dd1b23
+		color: #ffffff
+		transition: .3s all ease-in-out
+		input[type='submit']
+			padding: 0
+			text-transform: uppercase
+			border: none
+			color: #fff
+			background: none
+		em
+			padding-left: 8px
+			color: #fff
+			font-size: 16px
+	@media screen and(max-width:1025px)
+		padding-bottom: 20px
+	@media screen and(max-width: 576px)
+		.form-group
+			padding:  8px 0
+			input,textarea
+				padding: 8px 16px
+	@media screen and(max-width: 450px)
+		.form-group
+			padding:  8px0
+			input,textarea
+				padding: 8px 16px
+.RadCaptcha
+	margin-top: 16px
+	#ctl00_mainContent_ctl05_captcha_ctl01
+		display: flex
+		justify-content: space-between
+		align-items: center

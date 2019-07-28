@@ -1,0 +1,50 @@
+.library-images-display
+	padding-bottom: 30px
+	.library-image-fit
+		height: 345px
+		max-width: 100%
+		@media screen and(max-width: 1200px)
+			height: 260px
+		@media screen and(max-width: 576px)
+			height: 210px
+		@media screen and(max-width: 400px)
+			height: 190px
+		img
+			max-width: 
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.lightgallery
+		a
+			&:not(:first-child)
+				display: none
+	.library-image
+		position: relative
+		margin: 10px
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			background: rgba(#000000,.2)
+		img
+			max-width: 100%
+		&:after
+			content: '\f2ef'
+			font-family: 'Material Design Icons'
+			font-size: 32px
+			display: block
+			left: 50%
+			position: absolute
+			top: 50%
+			transform: translate(-50%,-50%)
+			color: #fff
+	
+	@media screen and(max-width: 1025px)
+		.library-image
+			img
+				width: 100%
+	

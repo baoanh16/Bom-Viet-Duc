@@ -1,0 +1,63 @@
+.product-form
+	margin-top: 35px
+	border: 1px solid #ededed
+	.contact-title
+		p
+			color: #333333
+			font-size: 16px
+			font-weight: 600
+			span
+				color: #2c378f
+
+	.product-form-title
+		padding: 0 0 30px 0
+		p
+			display: block
+			font-size: 15px
+			background: #f1f1f1
+			color: #333333
+			padding: 8px 20px
+			font-weight: 700
+	.form-group
+		padding: 0 100px 16px 100px
+		span
+			display: none
+		input,textarea
+			border: 1px solid #ededed
+			width: 100%
+			padding: 8px 30px
+			color: #666666
+			font-size: 14px
+			line-height: 20px
+			background: #f2f2f2
+			&:focus
+				outline: none
+			&::placeholder
+				color: #666666
+				font-size: 14px
+				line-height: 20px
+	.frm-btn
+		margin-bottom: 15px
+		cursor: pointer
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		padding: 4px 40px
+		border-radius: 15px
+		background: #dd1b23
+		color: #ffffff
+		input[type='submit']
+			padding: 0
+			text-transform: uppercase
+			border: none
+			color: #fff
+			background: none
+		em
+			padding-left: .5rem
+			color: #fff
+	@media screen and(max-width: 576px)
+		.form-group
+			padding: 0 50px 16px 50px
+	@media screen and(max-width: 450px)
+		.form-group
+			padding: 0 30px 16px 30px

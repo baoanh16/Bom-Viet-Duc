@@ -1,0 +1,133 @@
+.home-media-swiper
+	.swiper-wrapper
+		position: 
+		height: 475px
+		width: 100%
+		z-index: 1
+		display: flex
+	.swiper-container
+		height: 475px
+		.swiper-slide
+			min-height: 100%
+		.home-media-swiper-pagination
+			.swiper-pagination-bullet
+				opacity: 1
+				width: 70px
+				height: 5px
+				border-radius: 3px
+				background: #a1a5ac
+			.swiper-pagination-bullet-active
+				background: #dd1b23
+		@media screen and(max-width:1025px)
+			.home-media-swiper-pagination
+				.swiper-pagination-bullet
+					width: 50px
+	.swiper-media
+		height: 100%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.swiper-slide
+		height: 475px
+		.banner
+			height: 475px
+			position: relative
+	.swiper-media
+		position: relative
+		height: 100%
+		overflow: hidden
+		opacity: .75
+		.play
+			position: relative
+			&__icon
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				position: absolute
+				z-index: 1
+				background: url('/Data/Sites/1/media/play-icon.png')
+				background-size: cover
+				background-repeat: no-repeat
+				height: 80px
+				width: 80px
+				pointer-events: none
+		.play-icon
+			position: relative
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				z-index: 1
+				left: 50%
+				top: 50%
+				transform: translate(-50%,-50%)
+				width: 80px
+				height: 80px
+				background: rgba(#ffffff,.7)
+				border-radius: 50%
+				pointer-events: none
+			&:after
+				z-index: 0
+				background: none
+				content: '\f40a'
+				font-family: 'Material Design Icons'
+				font-size: 62px
+				display: block
+				position: absolute
+				left: 50%
+				top: 50%
+				pointer-events: none
+				transform: translate(-50%,-50%)
+		video
+			width: 100%
+			height: 475px
+			object-fit: cover
+			position: relative
+	.swiper-caption
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 50px
+	
+		p
+			text-align: center
+			font-size: 35px
+			color: rgb(255, 255, 255)
+			font-weight: bold
+			line-height: 43px
+			strong
+				font-weight: 700
+			span
+				font-weight: 300
+	@media screen and(max-width: 1400px)
+		.swiper-wrapper
+			height: 375px
+		.swiper-container
+			height: 375px
+		.swiper-slide
+			height: 375px
+			.banner
+				height: 375px
+		.swiper-media
+			video
+				height: 375px
+		.swiper-caption
+			p
+				font-size: 30px
+	@media screen and(max-width: 1025px)
+		.swiper-caption
+			p
+				font-size: 28px
+				line-height: 35px
+
+
+	@media screen and(max-width: 576px)
+		.swiper-caption
+			p
+				font-size: 20px
+				line-height: 28px
+
+				strong
+					white-space: nowrap
+				

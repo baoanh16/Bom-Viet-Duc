@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Home'
+	- var bodyClass = 'home-page'
+
+block main
+	include ../components/head-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/du-an/index.pug
+	include ../components/pagination/index.pug

@@ -1,0 +1,60 @@
+.support-information
+	padding-bottom: 50px
+	.document-title
+		h2
+	ul
+		margin-bottom: 30px
+		list-style-type: decimal
+		font-weight: bold
+		padding: 0
+		padding-left: 16px
+		margin: 0
+		li
+			color: #333333
+			position: relative
+			padding: 20px 0 0 0
+			&.active
+				.title
+					text-shadow: 0 0 .65px #009579, 0 0 .65px #009579
+				&:after
+					transform: rotate(180deg)
+					text-shadow: 0 0 .65px #009579, 0 0 .65px #009579
+			&:hover
+				.title
+					color: #009579
+					text-shadow: 0 0 .65px #009579, 0 0 .65px #009579
+			&:after
+				position: absolute
+				right: 0
+				top: 20px
+				content: '\e874'
+				font-family: 'Linearicons-Free'
+				font-size: 15px
+				color: #666666
+			.title
+				color: #333333
+				margin-left: -16px
+				line-height: 23px
+				display: block
+				padding: 0 0 16px 30px
+				font-weight: 400
+				border-bottom: 1px solid #e6e6e6
+			.content
+				display: none
+				margin: 30px 0 40px 0
+				p
+					padding: 0 10px 0 25px
+					font-weight: 400
+					font-size: 15px
+					line-height: 20px
+					color: #666666
+	@media screen and(max-width:1025px)
+		padding-bottom: 30px
+	@media screen and(max-width:576px)
+		ul
+			li
+				.title
+					padding: 0 20px 20px 16px
+				.content
+					p
+						padding: 0 10px

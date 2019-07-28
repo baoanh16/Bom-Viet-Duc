@@ -1,0 +1,12 @@
+extends _layout.pug
+
+block var
+	- var title = 'Giới thiệu'
+	- var bodyClass = 'home-page'
+
+block main
+	include ../components/head-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/gioi-thieu/gioi-thieu-article/index.pug
+	include ../components/gioi-thieu/linh-vuc/index.pug
+	include ../components/gioi-thieu/gioi-thieu-doi-tac/index.pug

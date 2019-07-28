@@ -1,0 +1,12 @@
+extends _layout.pug
+
+block var
+	- var title = 'Home'
+	- var bodyClass = 'home-page'
+
+block main
+	include ../components/home/home-swiper/index.pug
+	include ../components/home/home-san-pham/index.pug
+	include ../components/home/home-about/index.pug
+	include ../components/home/home-du-an/index.pug
+	include ../components/home/home-tin-tuc/index.pug

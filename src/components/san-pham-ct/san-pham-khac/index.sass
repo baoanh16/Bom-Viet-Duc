@@ -1,0 +1,45 @@
+.san-pham-khac
+	margin: 30px 0 60px 0
+	.other-product-wrapper
+		border: 1px solid #ededed
+		padding: 0 0 30px 0
+		.other-product
+			padding: 0 16px
+		.figure
+			&:hover
+				.figure-image
+					cursor: pointer
+					border-color: #333333
+				.figure-caption
+					a
+						text-decoration: underline
+						color: #333333
+						p
+							color: #333333
+		.figure-image
+			border: 1px solid #cdcdcd
+			display: flex
+			justify-content: center
+			align-items: center
+			img
+				max-width: 100%
+				height: auto
+		.figure-caption
+			p
+				padding-top: 16px
+				text-align: center
+				font-size: 14px
+				color: #666666
+				font-weight: 400
+				line-height: 20px
+		.w-20
+			padding: 0 15px
+	@media screen and(max-width: 1025px)
+		margin: 30px 0
+		.other-product-wrapper
+			.figure
+				margin-bottom: 20px
+
+			.figure-caption
+				p
+					padding-top: 8px

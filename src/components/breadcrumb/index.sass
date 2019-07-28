@@ -1,0 +1,46 @@
+.global-breadcrumb
+	margin-bottom: 50px
+	padding: 12px 0
+	background: #ededed
+	ol
+		padding: 0
+		list-style-type: none
+		li
+			display: inline-flex
+			font-size: 16px
+			line-height: 23px
+			padding-right: 1rem
+			position: relative
+			&:not(:last-child)
+				&:after
+					font-family: 'Material Design Icons'
+					content: '\f142'
+					font-size: 20px
+					color: #333333
+					display: block
+					position: absolute
+					right: -4px
+					bottom: 0
+			&.active
+				color: #333333
+			a
+				text-decoration: none
+				font-size: 16px
+				line-height: 23px
+				color: #333333
+	@media screen and(max-width: 1200px)
+		padding: 10px 0
+		margin-bottom: 30px
+	@media screen and(max-width: 768px)
+		margin-bottom: 20px
+		padding: 8px 0
+	@media screen and(max-width: 576px)
+		.breadcrumb
+			li
+				font-size: 14px
+				line-height: 22px
+				a
+					font-size: 13px
+					line-height: 22px
+					span
+						font-size: 13px

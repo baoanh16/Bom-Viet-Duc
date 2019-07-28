@@ -1,0 +1,139 @@
+.home-about-article
+	padding: 50px 0
+	@media screen and(max-width:1200px)
+		padding: 30px 0
+	@media screen and(max-width:768px)
+		padding: 20px 0
+	.figure
+		position: relative
+		overflow: hidden
+		@media screen and(max-width:576px)
+			margin-bottom: 16px
+		.figure-image
+			position: relative
+			height: 500px
+			overflow: hidden
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				bottom: 0
+				width: 100%
+				height: 20%
+				
+				background: -moz-linear-gradient(270deg, rgba(#ffffff,0) 0%, rgba(#000000,.5) 100%)
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(#ffffff,0)), color-stop(100%, rgba(#000000,.5)))
+				background: -webkit-linear-gradient(270deg, rgba(#ffffff,0) 0%, rgba(#000000,.5) 100%)
+				background: -o-linear-gradient(270deg, rgba(#ffffff,0) 0%, rgba(#000000,.5) 100%)
+				background: -ms-linear-gradient(270deg, rgba(#ffffff,0) 0%, rgba(#000000,.5) 100%)
+				background: linear-gradient(180deg, rgba(#ffffff,0) 0%, rgba(#000000,.5) 100%)
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		.figure-caption
+			transition: .3s all ease-in-out
+			transform: translateY(70px)
+			.figure-button
+
+				display: flex
+				padding: 16px 0  0 16px 
+				transition: .3s all ease-in-out
+				justify-content: flex-start
+				align-items: center
+				a
+					cursor: pointer
+					white-space: nowrap
+					transition: .3s all ease-in-out
+					background: #009579
+					border-radius: 15px
+					color: #fff
+					padding: 8px 40px
+					font-size: 14px
+					line-height: 22px
+					text-transform: uppercase
+					&:hover
+						background: #d92e2e
+					em
+						color: #fff
+						font-size: 16px
+						padding-left: 8px
+		&:hover
+			.figure-image
+				img
+					transition: .3s all ease-in-out
+					transform: scale(1.05)
+			.figure-caption
+				transform: translateY(0)
+				&:before
+					bottom: -40px
+		@media screen and(max-width:1200px)
+			.figure-image
+				height: 400px
+		@media screen and(max-width:1025px)
+			.figure-image
+				height: 300px
+		@media screen and(max-width:1025px)
+			.figure-image
+				height: 270px
+		.figure-caption
+			position: absolute
+			bottom: 32px
+			left: 0
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				bottom: 0
+				z-index: -1
+				width: 100%
+				height: 100%
+				background: linear-gradient(180deg, rgba(#ffffff,0)0%, rgba(#193d5e,.5) 100%)
+
+
+			h5
+				padding-left: 16px
+				font-size: 24px
+				color: #fff
+				line-height: 32px
+				font-weight: 700
+			p
+				font-size: 15px
+				color: #fff
+				padding: 0 16px 0 16px
+				overflow: hidden
+				text-overflow: ellipsis
+				display: inline-block
+				height: 69px
+				line-height: 22px
+				font-weight: 400
+			@media screen and(max-width:1025px)
+				bottom: 16px
+				h5
+					font-size: 20px
+				p
+					font-size: 14px
+					line-height: 20px
+					height: 64px
+
+			@media screen and(max-width:576px)
+				padding-right: 16px
+				@media screen and (max-width: 1200px)
+					a
+						em
+							font-size: 15px
+				@media screen and(max-width:1025px)
+					a
+						padding: 6px 20px
+				@media screen and(max-width: 768px)
+					a
+						padding: 4px 15px
+				@media screen and(max-width: 576px)
+					a
+						padding: 2px 10px
+						font-size: 11px
+						em
+							font-size: 13px
+							padding-left: 4px

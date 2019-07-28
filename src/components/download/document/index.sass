@@ -1,0 +1,56 @@
+.download-document
+	padding-bottom: 40px 
+	table
+		border: 1px solid #e6e6e6
+		width: 100%
+		tr
+			th
+				font-weight: 600
+				text-transform: uppercase
+				color: #009579
+				background: #eceff7
+				white-space: nowrap
+				font-weight: 15px
+				padding: 16px 40px 16px 20px
+			
+		tbody
+			tr
+				border-bottom: 1px solid #e6e6e6
+				td
+					width: 15%
+					padding: 16px 20px
+					&:first-child
+						width: 70%
+				
+					*
+						color: #333333
+					a
+						&:hover
+							color: #009579
+							text-shadow: 0 0 .65px #009579, 0 0 .65px #009579
+							text-decoration: underline
+						em
+							margin-left: 1rem
+							color: #c9181f
+							font-size: 15px
+	@media screen and(max-width:1025px)
+		
+	@media screen and(max-width:576px)
+		table
+			thead
+				display: none
+			tbody
+				tr
+					padding: 16px
+					display: flex
+					flex-wrap: wrap
+
+					td
+						padding: 4px 0
+						display: block
+						width: 100%
+						&:first-child
+							display: block
+							width: 100%
+						&:before
+							content: attr(data-title ) ": "

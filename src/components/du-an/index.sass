@@ -1,0 +1,77 @@
+.danh-sach-du-an
+	padding-bottom: 40px
+	.col-12
+		padding: 0 7px
+	.project-display-wrapper
+		.figure
+			position: relative
+			margin-bottom: 8px
+			border: 3px solid transparent
+			@media screen and(min-width: 1025px)
+				&:hover
+					border: 3px solid #009579
+					.figure-caption
+						transition: .3s all ease-in-out
+						background: #009579
+	.figure-image
+		img
+			max-width: 100%
+			height: auto
+			
+	.figure-caption
+		transition: .3s all ease-in-out
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		position: absolute
+		width: 100%
+		bottom: 0
+		left: 0
+		background: rgba(#000000,.4)
+		a
+			text-decoration: none
+		p
+			padding: 16px 30px
+			text-transform: uppercase
+			font-size: 15px
+			color: #fff
+			font-weight: 600
+			line-height: 22px
+	.figure-caption-under
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		background: #f6f6f5
+		a
+			p
+				padding: 20px 30px
+				text-transform: uppercase
+				color: #666666
+				font-weight: 600
+	@media screen and(max-width:1200px)
+		.figure-caption
+			a
+				p
+					padding: 8px 20px
+					font-size: 14px
+		.figure-caption-under
+			a
+				p
+					padding: 8px 20px
+					font-size: 14px
+	@media screen and(max-width:768px)
+		.project-display-wrapper
+			.figure
+				margin-bottom: 0
+				border: 10px solid transparent
+	@media screen and(max-width: 768px)
+		.col
+			padding: 0 
+		.project-display-wrapper
+			flex-flow: row
+			display: flex
+			justify-content: center
+			align-items: center
+	@media screen and(max-width: 768px)
+		.project-display-wrapper
+			flex-flow: column

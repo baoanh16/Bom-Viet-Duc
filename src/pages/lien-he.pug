@@ -1,0 +1,16 @@
+extends _layout.pug
+
+block var
+	- var title = 'Home'
+	- var bodyClass = 'home-page'
+
+block main
+	include ../components/head-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	.container
+		.row
+			.col-lg-6
+				include ../components/lien-he/dia-chi/index.pug
+				include ../components/lien-he/google-map/index.pug
+			.col-lg-6
+				include ../components/lien-he/form-lien-he/index.pug

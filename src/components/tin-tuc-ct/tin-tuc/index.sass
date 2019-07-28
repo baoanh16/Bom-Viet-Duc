@@ -1,0 +1,47 @@
+.news-detail
+	article
+		br
+			display: none
+		h2
+			font-size: 24px
+			font-weight: 600
+			line-height: 30px
+			color: #333333
+		@media screen and (max-width: 576px)
+			h2
+				font-size: 22px
+				line-height: 30px
+		time
+			padding: 8px 0
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			em
+				padding-right: .25rem
+				color: #999999
+			p
+				color: #999999
+				margin-bottom: 0
+		p
+			margin-bottom: 8px
+			color: #333333
+			font-size: 15px
+			font-weight: 400
+			line-height: 22px
+		.bold
+			color: #666666
+			font-weight: 700
+			margin-bottom: 20px
+		img
+			margin: 4px 0 4px
+			max-width: 100%
+			height: auto
+	.social-button
+		padding: 30px 0 50px 0
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		.social-network
+			padding-right: 8px
+			&:first-child
+				margin-top: -8px

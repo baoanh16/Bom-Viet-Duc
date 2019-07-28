@@ -1,0 +1,88 @@
+.home-du-an
+	background: url('../img/home/bg-1.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 50px 0
+	@media screen and(max-width:1200px)
+		padding: 30px 0
+	@media screen and(max-width:768px)
+		padding: 20px 0
+	.home-project-button
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 30px 0 10px 0
+		@media screen and(max-width:768px)
+			padding: 30px 0 20px 0
+		&:hover
+			a
+				background: #fff
+		a
+			padding: 8px 40px
+			border-radius: 20px
+			color: #dd1b23
+			border: 2px solid #dd1b23
+			font-size: 16px
+			text-transform: uppercase
+			font-weight: 600
+			text-decoration: none
+			em
+				margin-left: 12px
+				color: #dd1b23
+				font-size: 16px
+	.figure
+		margin-bottom: 20px
+		position: relative
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15)
+		&:hover
+			transition: .3s all ease-in-out
+			box-shadow: 0px 0px 0px 5px rgba(221,27,35,1)
+			.figure-caption
+
+				background: #dd1b23
+				p
+					color: #fff
+				.name
+					color: #fff
+		.figure-image
+			img
+				max-width: 100%
+				height: auto
+				width: 100%
+		.figure-caption
+			transition: .3s all ease-in-out
+			padding: 1rem 
+			background: #ffffff
+			position: absolute
+			left: 0
+			bottom: 0
+			p
+				font-size: 12px
+				text-transform: uppercase
+				color: #999999
+			.name
+				font-size: 22px
+				color: #009579
+				line-height: 30px
+				font-weight: bold
+				text-transform: uppercase
+		@media screen and(max-width: 1025px)
+			.figure-caption
+				padding: .5rem 
+				.name
+					font-size: 18px
+		@media screen and(max-width: 768px)
+			.figure-caption
+				padding: 1rem
+				p
+					font-size: 14px
+				.name
+					font-size: 24px
+		@media screen and(max-width: 576px)
+			.figure-caption
+				padding: .5rem
+				p
+					font-size: 11px
+				.name
+					font-size: 20px

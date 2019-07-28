@@ -1,0 +1,198 @@
+.home-news
+	.figure
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-flow: row
+		position: relative
+		@media screen and(min-width: 1024px)
+			&:hover
+				.figure-caption-large
+					.name
+						a
+							color: #dd1b23
+				.figure-caption
+					.name-small
+						a
+							color: #dd1b23
+	.figure-image
+		height: 380px
+		width: auto
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+		a
+			display: block
+			height: 100%
+		@media screen and(max-width: 1200px)
+			height: 300px
+		@media screen and(max-width: 768px)
+			height: 400px
+	.figure-caption-large
+		position: absolute
+		left: 1rem
+		bottom: 1rem
+		padding-right: 1rem
+		.name
+			a
+				font-size: 18px
+				line-height: 25px
+				color: #fff
+				font-weight: 600
+	.half-new
+		.figure
+			&:first-child
+				border-bottom: 10px solid transparent
+			&:last-child
+				border-top: 10px solid transparent
+		.figure-image
+			height: 180px
+			min-width: 50%
+			max-width: 50%
+			width: auto
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+			@media screen and(max-width: 1200px)
+				height: 140px
+
+			@media screen and(max-width: 768px)
+				height: 190px
+		.figure-caption
+			padding-left: 1rem
+			.name-small
+				a
+					display: inline-block
+					text-decoration: none
+					overflow: hidden
+					text-overflow: ellipsis
+					height: 44px
+					font-size: 16px
+					line-height: 22px
+					color: #333333
+					font-weight: 600
+		time
+			padding: .5rem 0
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			color: #999999
+			font-size: 13px
+			em
+				padding-right: .25rem
+			*
+				color: #999999
+				font-size: 12px
+		.caption
+			display: inline-block
+			overflow: hidden
+			text-overflow: ellipsis
+			height: 60px
+			font-size: 16px
+			line-height: 20px
+			color: #999999
+			span
+				display: inline-block
+				overflow: hidden
+				text-overflow: ellipsis
+				height: 60px
+				font-size: 16px
+				line-height: 20px
+				color: #999999
+	@media screen and(max-width: 1200px)
+		.figure-caption
+			time
+				padding: .25rem 0
+			.name-small
+				font-size: 14px
+			.caption
+		
+				line-height: 20px
+	@media screen and(max-width: 1025px)
+		.figure-caption-large
+			.name
+				font-size: 16px
+		.figure-caption
+			.name-small
+				a
+					line-height: 20px
+					height: 39px
+			time
+				padding: .15rem 0
+			.name-small
+				*
+					font-size: 14px
+			.caption
+				line-height: 20px
+				height: 40px
+	@media screen and(max-width:768px)
+		.half-new
+			.figure
+				&:first-child
+					border-bottom: none
+				&:last-child
+					border-top: none
+			.figure-caption
+				padding: 0 0 0 16px
+		.figure
+			width: 100%
+			padding-bottom: 1rem
+		.figure-image
+			width: 100%
+		.figure-caption-large
+			bottom: 2rem
+
+		.figure-caption
+			
+			time
+				padding: .5rem 0
+			.name-small
+				*
+					font-size: 16px
+			.caption
+				height: 80px
+				line-height: 20px
+				
+	@media screen and(max-width:576px)
+		.figure-image
+			height: 250px
+		.half-new
+			.figure
+				flex-flow: column
+			.figure-image
+				height: 225px
+				max-width: 100%
+			.figure-caption
+				padding: 16px 0 0 0
+		.figure-caption-large
+			bottom: 1.2rem
+			left: .5rem
+			.name
+				*
+					font-size: 16px
+		.figure
+			flex-flow: column
+		.figure-caption
+			.name-small
+				*
+					font-size: 16px
+					line-height: 20px
+					height: auto
+					color: #333333
+					font-weight: 600
+			time
+				padding: .5rem 0
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				font-size: 12px
+				*
+					color: #999999
+					font-size: 12px
+			.caption
+				height: 63px
+				*
+					font-size: 14px
+					color: #999999

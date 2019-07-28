@@ -1,0 +1,199 @@
+.sidebar-navigation
+	width: 100%
+	height: auto
+	background: #f5f5f5
+	h2
+		padding: 20px  0 10px 0
+		font-size: 20px
+		font-weight: 700
+		color: #333333
+		text-align: left
+		border-bottom: 1px solid #cccccc
+		margin: 0 20px
+	.product-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			display: block
+			&.active,&.selected
+				a
+					color: #009579
+					em
+						color: #009579
+				ul
+					display: block !important
+					li
+						&.active
+							a
+								font-weight: 500
+								color: #009579
+								&:hover
+									font-weight: 500
+						a
+							color: #333333
+			&:hover
+				a
+					color: #009579
+				ul
+					li
+						font-weight: 400
+						&:hover
+							a
+								color: #009579
+								font-weight: 400
+							ul
+								li
+									&:hover
+										a
+											color: #009579
+											font-weight: 600
+									a
+										color: #333333
+										font-weight: 400
+						a
+							color: #333333
+			a
+				position: relative
+				display: block
+				font-size: 16px
+				font-weight: 600
+				padding: 20px 10px 20px 35px
+				text-decoration: none
+				color: #333333
+				letter-spacing: .02em
+				transition: .3s all ease-in-out
+				&:hover,&.selected
+					a
+						font-weight: 600
+						background-color: #f5f5f5
+						em
+							color: #009579
+				em
+
+					font-size: 24px
+					position: absolute
+					left: 10px
+					top: 50%
+					transform: translateY(-50%)
+					padding: 5px
+					border-radius: 50%
+					color: #999999
+			ul
+				padding: 0
+				margin: 0
+				display: none
+				&.open
+					display: block
+				li
+					&.active
+						a
+							color: #009579
+						
+					a
+						color: #333333
+						font-weight: 400
+						padding: 20px  0
+						
+						em
+							left: 20px
+							font-size: 14px
+							&:before
+								content: '\f142'
+	@media screen and(max-width:1400px)
+		.product-list
+			li
+				a
+					font-size: 14px
+					em
+						font-size: 20px
+				ul
+					li
+						a
+							em
+								font-size: 20px
+	@media screen and(max-width:1025px)
+		margin-bottom: 30px
+.sidebar-product-navigation
+	padding-bottom: 50px
+	background: #f5f5f5
+	h2
+		padding: 20px  0 10px 0
+		font-size: 20px
+		font-weight: 700
+		color: #333333
+		text-align: left
+		border-bottom: 1px solid #cccccc
+		margin: 0 20px
+	.product-filter-wrapper
+		list-style-type: none
+		padding: 0
+		margin: 16px 0 0 0
+		li
+			transition: height .3s ease-in-out
+			.filter-title
+				padding: 16px 10px 16px 16px
+				font-size: 16px
+				font-style: normal
+				font-family: 'Arial'
+				em
+					color: #999999
+					font-size: 24px
+			.filter-item-wrapper
+				padding-left: 30px
+				display: flex
+				justify-content: center
+				align-items: flex-start
+				flex-flow: column
+				flex-wrap: wrap
+				opacity: 0
+				height: 0
+				pointer-events: none
+				z-index: -1
+				transition: opacity .3s ease-in-out,height .3s ease-in-out
+				&.active
+					opacity: 1
+					height: 100%
+					pointer-events: auto
+					z-index: 1
+				a
+					position: relative
+					padding-left: 25px
+					margin: 5px 0
+					position: relative
+					text-decoration: none
+					color: #333333
+					display: flex
+					justify-content: center
+					align-items: center
+					&:before
+						content: ''
+						font-family: 'Material Design Icons'
+						font-size: 20px
+						display: block
+						position: absolute
+						left: 0
+						font-weight: 200
+						bottom: 3px
+						width: 100%
+						height: 100%
+						font-weight: 200
+						color: #d7d7d7
+				.checkbox
+					&:before
+						content: '\f1a2'
+					&.active
+						&:before
+							content: '\fc2e'
+				.radio
+					&:before
+						content: '\f43d'
+					&.active
+						&:before
+							content: '\f43e'
+				.color
+					width: 30px
+					height: 30px
+					display: block
+					&:not(:last-child)
+						margin-right: 8px

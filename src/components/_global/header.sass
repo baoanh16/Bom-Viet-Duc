@@ -1,0 +1,339 @@
+.laptop-header
+	position: fixed
+	width: 100vw
+	height: 120px
+	z-index: 9999
+	.top-header
+		display: flex
+		align-items: center
+		background: #009579
+	.bottom-header
+		background: #ffffff
+		@media screen and(max-width:576px)
+			.container
+				width: auto
+	.top-header-wrapper
+		height: 35px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.nav-left-top
+			.ModuleContent
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 14px
+				color: rgb(255, 255, 255)
+				line-height: 22px
+			.contact
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				a
+					text-decoration: none
+					color: #ffffff
+					display: flex
+					justify-content: center
+					align-items: center
+				em
+					padding-right: 10px
+				p
+					font-size: 14px
+				&:first-child
+					padding-right: 35px
+		@media screen and(max-width:1025px)
+			.nav-left-top
+				.ModuleContent
+					align-items: flex-start
+		.nav-right-top
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 100%
+			.form-search
+				height: 100%
+				background: #007761
+				.Module
+					height: 100%
+				.searchbox
+					height: 100%
+				input
+					height: 100%
+					padding: 0 8px
+					background: none
+					border: none
+					font-size: 14px
+					color: rgba(255, 255, 255, 0.8)
+					&:focus
+						outline: none
+					&::placeholder
+					
+						font-size: 14px
+						color: rgba(255, 255, 255, 0.8)
+						font-style: italic
+				button
+					font-size: 14px
+					color: rgba(255, 255, 255, 0.8)
+					background: none
+					border: none
+					&:focus
+						outline: none
+			.language-wrapper
+				height: 120%
+				padding-left: 8px
+				font-size: 14px
+				position: relative
+				color: rgb(255, 255, 255)
+				display: flex
+				justify-content: center
+				align-items: center
+				&:hover
+					.language-list
+						display: flex
+						justify-content: center
+						align-items: center
+						background: #007761
+						z-index: 99
+						top: 38px
+						transform: scaleY(1)
+						opacity: 1
+						padding: 0 
+						width: 37px
+						margin: 0
+						height: 64px
+				.current-language
+					padding-left: 16px
+					display: flex
+					justify-content: center
+					align-items: center
+
+							
+				.language-list
+					position: absolute
+					width: 100%
+					display: flex
+					flex-wrap: wrap
+					right: 0
+					opacity: 0
+					transition: transform 0.3s ease-in-out
+					height: auto
+					transform: scaleY(0)
+					transform-origin: top
+					list-style-type: none
+					.item
+						color: #ffffff
+						width: 100%
+						display: flex
+						justify-content: center
+						align-items: center
+						&:hover
+							background: #ffffff
+							a
+								color: #007761
+						a
+							color: #ffffff
+		@media screen and(max-width:1025px)
+			.nav-right-top
+				width: 100%
+				justify-content: space-between
+
+		
+	.bottom-header-wrapper
+		height: 85px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media screen and(max-width: 1025px)
+			height: 60px
+	@media screen and(max-width:1025px)
+		height: 95px
+	.toggle-mobile
+		display: none
+		@media screen and(max-width:1025px)
+			display: block
+			em
+				font-size: 40px
+	.navbrand
+		@media screen and (max-width:1025px)
+
+			img
+				width: 64px
+	.nav-right
+		display: flex
+		justify-content: center
+		align-items: center
+		
+		&.is-active
+			transform: translateX(0)
+			height: 100vh
+		ul
+			font-size: 16px
+			color: #009579
+			display: flex
+			justify-content: center
+			align-items: center
+			text-transform: uppercase
+			li
+				display: flex
+				align-items: center
+				padding: 0 16px
+				a
+					transition: .3s all ease-in-out
+					padding:  8px 0
+					font-weight: 400
+					justify-content: center
+					align-items: center
+					color: #009579
+				&.active,&:hover
+					a
+						position: relative
+						text-shadow: 0 0 .65px #009579, 0 0 .65px #009579
+						&:after
+							content: ''
+							display: block
+							position: absolute
+							left: 0
+							bottom: 2px
+							width: 100%
+							height: 2px
+							background: #009579
+			.has-sub
+				position: relative
+				&:after
+					font-family: 'Material Design Icons'
+					content: '\f35d'
+					font-size: 16px
+					color: #009579
+					position: absolute
+					right: 0
+					bottom: 8px
+				em
+					display: none
+				
+				&:hover
+					.nav-sub
+						display: flex
+						justify-content: center
+						align-items: flex-start
+						border: 1px solid #cccccc
+						background: #fff
+						z-index: 99
+						top: 38px
+						transform: scaleY(1)
+						opacity: 1
+						padding: 0 
+						width: 15vw
+						min-width: 228px
+						margin: 0
+						flex-flow: column
+						height: auto
+						li
+							align-items: flex-start
+							display: flex
+							padding: 8px 16px
+							a
+								padding: 0
+								text-transform: none
+								color: #333333
+							&:hover
+								position: relative
+								&:after
+									display: none
+								a
+									color: #009579
+									padding: 0 0
+									text-shadow: none
+								
+									
+							a
+								white-space: nowrap
+								&:after
+									display: none
+				.nav-sub
+					position: absolute
+					width: 100%
+					display: flex
+					flex-wrap: wrap
+					opacity: 0
+					transition: transform 0.3s ease-in-out
+					height: auto
+					transform: scaleY(0)
+					transform-origin: top
+					list-style-type: none
+					li
+						a
+							text-shadow: none
+					
+		@media screen and(max-width:1200px)
+			ul
+				font-size: 14px
+		@media screen and(max-width:1025px)
+			transition: .3s all-ease-in-out
+			height: calc(100vh - (35px + 85px))
+			padding: 16px 0
+			background: #009579
+			position: fixed
+			z-index: 999
+			left: 0
+			flex-flow: column
+			min-width: 375px
+			top: 95px
+			transition: .3s all ease-in-out
+			transform: 
+			align-items: flex-start
+			justify-content: flex-start
+			display: inline-flex
+			transform: translateX(-100%)
+			.contact
+				padding: 16px 0 0 0
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				color: #fff
+				padding-left: 16px
+				em
+					margin-right: 8px
+				a
+					color: #ffffff
+					font-size: 14px
+			ul
+				min-width: 375px
+				align-items: flex-start
+				color: #fff
+				justify-content: center
+				flex-flow: column
+				background: none
+				margin: 0
+				padding: 0 16px
+				li
+					padding: 0
+					a
+						padding: 8px 16px 8px 0
+						color: #fff
+				.has-sub
+					display: flex
+					justify-content: flex-start
+					align-items: flex-start
+					white-space: nowrap
+					flex-flow: column
+					position: relative
+					&:before
+						font-family: 'Material Design Icons'
+						content: '\f35d'
+						font-size: 16px
+						color: #fff
+						position: absolute
+						right: 16px
+						bottom: 8px
+					.nav-sub
+						justify-content: space-between
+						height: 0
+						position: initial
+						li
+							a
+								color: #009579
+				li
+					&.active,&:hover
+						a
+							&:after
+								background: #fff

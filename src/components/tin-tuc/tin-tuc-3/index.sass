@@ -1,0 +1,122 @@
+.tin-tuc-lower
+	padding: 20px 0 50px 0
+	.figure
+		@media screen and(min-width: 1025px)
+			&:hover
+				.figure-caption
+					.name-small
+						a
+							color: #dd1b23
+	.figure-image
+		img
+			max-width: 100%
+			height: auto
+	.figure-caption
+		padding-top: 1rem
+
+		.name-small
+			a
+				text-decoration: none
+				font-size: 16px
+				line-height: 23px
+				color: #333333
+				font-weight: 600
+		time
+			padding: .5rem 0
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			color: #999999
+			font-size: 12px
+			em
+				padding-right: .25rem
+			*
+				color: #999999
+				font-size: 12px
+		.caption
+			font-size: 15px
+			line-height: 22px
+			color: #999999
+	@media screen and(max-width: 1400px)
+		.figure-caption
+			padding-top: 10px
+			.name-small
+				
+			time
+				padding: .25rem 0
+			.name-small
+				a
+					height: 40px
+					text-decoration: none
+					overflow: hidden
+					text-overflow: ellipsis
+					display: inline-block
+					line-height: 20px
+					font-size: 14px
+			.caption
+				overflow: hidden
+				display: inline-block
+				line-height: 20px
+				text-overflow: ellipsis
+				height: 60px
+	@media screen and(max-width: 1200px)
+		padding: 20px 0 30px 0
+		.figure-caption
+			.name-small
+				a
+					line-height: 20px
+					overflow: hidden
+					text-overflow: ellipsis
+					height: 40px
+			.caption
+				overflow: hidden
+				line-height: 20px
+				text-overflow: '...'
+				height: 60px
+	@media screen and(max-width: 1025px)
+		.figure-caption
+			.caption
+				height: 60px
+	@media screen and(max-width:768px)
+		.figure
+			width: 100%
+			padding-bottom: 1rem
+		.figure-image
+			width: 100%
+			img
+				width: 100%
+		.figure-caption
+			time
+				padding: .5rem 0
+			.name-small
+				a
+					font-size: 16px
+					height: 42px
+			.caption
+				font-size: 14px
+				height: 60px
+	@media screen and(max-width:576px)
+		.figure-caption
+			padding:  16px 0  0 0 
+			.name-small
+				a
+					font-size: 16px
+					line-height: 20px
+					height: auto
+					color: #333333
+					font-weight: 600
+			time
+				padding: .5rem 0
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				color: #999999
+				font-size: 12px
+				*
+					color: #999999
+					font-size: 12px
+			.caption
+				font-size: 14px
+				color: #999999
+				height: auto
+				overflow: visible
